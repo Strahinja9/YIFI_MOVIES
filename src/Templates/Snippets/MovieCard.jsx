@@ -7,9 +7,9 @@ const MovieCard = ({movieData}) => {
     return (
         <div className="card my-3" style={{width: "18rem"}}>
             <img src={movieData.Poster} style={{height: "auto"}} className="card-img-top" alt={movieData.Title}/>
-            <div className="card-body">
-                <h5 className="card-title">{movieData.Year}</h5>
-                <p className="card-text">{movieData.Title}</p>
+            <div className="card-body d-flex flex-column justify-content-end">
+                <h5 className="card-title text-center">{movieData.Year}</h5>
+                <p className="card-text text-center">{movieData.Title}</p>
 
             </div>
         </div>
